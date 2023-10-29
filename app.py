@@ -14,7 +14,7 @@ def index():
 
 def generate_frames():
     cap = cv2.VideoCapture(0)
-    model = YOLO('//sleepymodel.pt')
+    model = YOLO('/Users/jinkwon/Downloads/sleepypy/sleepymodel.pt')
 
     asleep = 0
     asleep_max = 45
@@ -48,6 +48,8 @@ def generate_frames():
                 else:
                     subprocess.check_call(
                         [otherPython, playsoundPath, "/Users/jinkwon/Downloads/sleepypy/mystery2.mp3"])
+        else:
+            asleep = 0
 
         annotated_frame = results[0].plot()
 
