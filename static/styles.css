@@ -1,0 +1,28 @@
+body {
+    background-image: url("image.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+h1 {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 400%;
+}
+.content {
+    text-align: center;
+}
+.button-link {
+    color: white;
+    background-color: #121F5C;
+    text-decoration: none;
+    font-size: 230%;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 10px;
+}
